@@ -59,24 +59,75 @@
             </div>
       </section>
       
+      <!-- SECTION TWO wher actual content goes of the pages -->
       <section class="container-fluid px-0">
-          <div class="row align-items-center">
-              <div class="col-md-6">
+          <div class="row align-items-center content">
+              <div class="col-md-6 order-2 order-md-1">
                   <img src="../Bootstrap4_Code/13_Museum_Of_Candy/Starter/imgs/milk.png" class="img-fluid">
               </div>
-              <div class="col-md-6 text-center">
-                    <h2>MUSEUM OF CANDY</h2>
-                    
+              <div class="col-md-6 text-center order-1 order-md-2">
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                            <h2>MUSEUM OF CANDY</h2>
+                            <img src="../Bootstrap4_Code/13_Museum_Of_Candy/Starter/imgs/lolli_icon.png" alt="lollipop icon" class="d-none d-lg-inline">
+                            <p class="lead">Lorem ipsum dolor, sit amet consectetur
+                            adipisicing elit. Error accusantium corporis praesentium
+                            cupiditate pariatur laboriosam sint excepturi, facilis
+                            dolorum. Magni sapiente iste rem eveniet error pariatur,
+                            impedit suscipit accusantium vitae esse aliquam odio dolore
+                            dolor inventore natus architecto autem enim.
+                            </p>
+                        </div>
+                    </div>
               </div>
           </div>
+          
+          <!-- SECOND ROW OF PIC AND TEXT -->
+        <div class="row align-items-center content">
+            <div class="col-md-6 text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                            <h2>MUSEUM OF CANDY</h2>
+                            <img src="../Bootstrap4_Code/13_Museum_Of_Candy/Starter/imgs/lolli_icon.png" alt="lollipop icon" class="d-none d-lg-inline">
+                            <p class="lead">Lorem ipsum dolor, sit amet consectetur
+                            adipisicing elit. Error accusantium corporis praesentium
+                            cupiditate pariatur laboriosam sint excepturi, facilis
+                            dolorum. Magni sapiente iste rem eveniet error pariatur,
+                            impedit suscipit accusantium vitae esse aliquam odio dolore
+                            dolor inventore natus architecto autem enim.
+                            </p>
+                        </div>
+                    </div>
+            </div>
+                <div class="col-md-6">
+                    <img src="../Bootstrap4_Code/13_Museum_Of_Candy/Starter/imgs/gumball.png" class="img-fluid">
+                </div>
+        </div>
+
+            <!-- THIRD ROW TEXT AND IMAGE -->
+            <div class="row align-items-center content">
+                <div class="col-md-6 order-2 order-md-1">
+                    <img src="../Bootstrap4_Code/13_Museum_Of_Candy/Starter/imgs/sprinkles.png" class="img-fluid">
+                </div>
+                <div class="col-md-6 text-center order-1 order-md-2">
+                      <div class="row justify-content-center">
+                          <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                              <h2>MUSEUM OF CANDY</h2>
+                              <img src="../Bootstrap4_Code/13_Museum_Of_Candy/Starter/imgs/lolli_icon.png" alt="lollipop icon" class="d-none d-lg-inline">
+                              <p class="lead">Lorem ipsum dolor, sit amet consectetur
+                              adipisicing elit. Error accusantium corporis praesentium
+                              cupiditate pariatur laboriosam sint excepturi, facilis
+                              dolorum. Magni sapiente iste rem eveniet error pariatur,
+                              impedit suscipit accusantium vitae esse aliquam odio dolore
+                              dolor inventore natus architecto autem enim.
+                              </p>
+                          </div>
+                      </div>
+                </div>
+            </div>
       </section>
 
-      <!-- pulled -->
-
-
-
-
-
+      
 
 
 
@@ -85,5 +136,15 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNav");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+
+
+</body>
 </html>
